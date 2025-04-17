@@ -172,7 +172,7 @@ div[data-404_screen]{
 
  /* Media queries  */
 
- @media (max-width:500px) {
+ @media (max-width:650px) {
     body{
         overflow-y: auto;
     }
