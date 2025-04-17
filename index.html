@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="Assets/cloud.svg">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <h1>Weather app</h1>
+
+        <div class="container">
+
+            <!-- tab switching  -->
+            <div data-switching_tab >
+                <p class="your_Weather switchbg current_tab_bg">Your Weather</p>
+                <p class="search_weather switchbg">Search Weather</p>
+            </div>
+
+            <!-- Grant access screen  -->
+            <div data-grant_access_screen class="displayflex not_active">
+                <img src="Assets/location.png" width="80" height="80" loading="lazy" alt="">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button id="grant_access_btn">GRANT ACCESS</button>
+            </div>
+
+            <!-- Loading screen  -->
+            <div data-loading_screen class="displayflex not_active">
+                <img src="Assets/loading.gif" width="150" height="150" alt="">
+                <p>LOADING</p>
+
+            </div>
+
+
+            <!-- Search Weather screen -->
+            <div data-search_Weather_screen class="not_active">
+                <form class="sub_search">
+                    <input type="text" id="search_input" placeholder="Enter for city..." autocomplete="off">
+                    <button id="icon_bg">
+                        <img id="search_icon" src="/Assets/search.png" width="20" height="20" loading="lazy" alt="">
+                    </button>
+                </form>
+
+            </div>
+
+            <!-- Weather showing screen  -->
+            <div data-Weather_showing_screen class="not_active">
+                
+                <!-- city name -->
+                 <div id="cityname" >
+                     <p data-city_name > </p>
+                      <!-- flag -->
+                    <img id="flag" data-country_flag alt="">
+                 </div>
+
+                 
+                <div id="middleArea">
+                    <!-- Clear sky -->
+                <p data-clear_sky > </p>
+                
+                <!-- weather des icon  -->
+               <img data-weather_des_icon style="width: 90px; height: 90px;">
+
+                </div>
+
+                <img src="" alt="">
+                <!-- Temp  -->
+                <p id="temp" data-temp> </p>
+
+                <div class="parameter-container">
+                    <!-- Card - 1  -->
+                    <div data-Card-1 class="parameter">
+                        <img src="Assets/wind.png" alt="">
+                        <p>WINDSPEED</p>
+                        <P data-windspeed> </P>
+                    </div>
+
+                    <!-- Card - 2  -->
+                    <div data-Card-2 class="parameter">
+                        <img src="Assets/humidity.png" alt="">
+                        <p >HUMIDITY</p>
+                        <P data-humidity></P>
+                    </div>
+
+                    <!-- Card - 3  -->
+                    <div data-Card-3 class="parameter">
+                        <img src="Assets/cloud.png" alt="">
+                        <p>CLOUDS</p>
+                        <P data-clouds></P>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- 404 -->
+             <div data-404_screen class="not_active">
+                <h2>Not Found</h2>
+                <img src="Assets/not-found.png" alt="" width="200px" height="200px">
+
+
+
+
+
+             </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="script.js"></script>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
