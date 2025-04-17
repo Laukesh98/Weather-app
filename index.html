@@ -24,7 +24,7 @@
             </div>
 
             <!-- Grant access screen  -->
-            <div data-grant_access_screen class="displayflex not_active">
+            <div data-grant_access_screen class="media_grant_access_screen displayflex not_active">
                 <img src="Assets/location.png" width="80" height="80" loading="lazy" alt="">
                 <p>Grant Location Access</p>
                 <p>Allow Access to get weather Information</p>
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Weather showing screen  -->
-            <div data-Weather_showing_screen class="not_active">
+            <div data-Weather_showing_screen class="Weather_showing_screen not_active">
                 
                 <!-- city name -->
                  <div id="cityname" >
@@ -63,10 +63,10 @@
                  
                 <div id="middleArea">
                     <!-- Clear sky -->
-                <p data-clear_sky > </p>
+                <p data-clear_sky class="clear_sky" > </p>
                 
                 <!-- weather des icon  -->
-               <img data-weather_des_icon style="width: 90px; height: 90px;">
+               <img data-weather_des_icon id="weather_des_icon" >
 
                 </div>
 
@@ -104,7 +104,7 @@
             <!-- 404 -->
              <div data-404_screen class="not_active">
                 <h2>Not Found</h2>
-                <img src="Assets/not-found.png" alt="" width="200px" height="200px">
+                <img src="Assets/not-found.png" alt="" id="error_img_404">
 
 
 
