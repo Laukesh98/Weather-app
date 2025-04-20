@@ -34,6 +34,8 @@ search_weather.addEventListener("click", () => {
   search_Weather_screen.classList.remove("not_active");
   grant_aceess_screen.classList.add('not_active')
   loading_screen.classList.add('not_active')
+  not_found_screen.classList.add('not_active')
+  
   search_input.value = ''
   search_input.focus();
 });
